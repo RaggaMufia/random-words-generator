@@ -40,6 +40,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    byebug (9.0.6)
     coderay (1.1.1)
     concurrent-ruby (1.0.4)
     debug_inspector (0.0.2)
@@ -74,6 +75,11 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.4.2)
+      byebug (~> 9.0)
+      pry (~> 0.10)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -140,10 +146,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  binding_of_caller
   jbuilder (~> 2.0)
   jquery-rails
   pg
-  pry
+  pry-byebug
+  pry-rails
   rails (= 4.2.7.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -152,4 +160,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.12.5
+   1.13.7
