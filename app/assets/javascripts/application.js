@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree ./home
+//= require_tree ./utils
 //= require_tree .

@@ -1,9 +1,29 @@
+<div class="stopwatch">
+  <div class="pull-right">
+    <div class="clock">
+      <span id="cd_m">00</span>:
+      <span id="cd_s">00</span>:
+      <span id="cd_ms">00</span>
+    </div>
+
+    <div class="settings">
+      <input class="btn small" type="button" value="Start" id="cd_start" />
+      <input class="btn small" type="button" value="Pause" id="cd_pause" />
+      <input class="btn small" type="button" value="Stop"  id="cd_stop" />
+      <input class="btn small" type="button" value="Reset" id="cd_reset" />
+      <input type="text" class="input" value="180" id="cd_seconds" /> sec
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
 <div class="hero-content">
   <div class="target">
     Start
   </div>
 
-  <button type="button" id="next-btn">
+  <button type="button" id="next-btn" class="btn">
     Next
   </button>
 </div>
