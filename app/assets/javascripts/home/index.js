@@ -13,7 +13,7 @@
       $("#next-btn").on("click", function(e) {
         e.preventDefault();
 
-        $(".hero-content").html(_this.words.pop());
+        $(".target").html(_this.words.pop());
       });
     }
   }

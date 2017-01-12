@@ -1,14 +1,16 @@
 <div class="hero-content">
-  WOAH
+  <div class="target">
+    Start
+  </div>
+
+  <button type="button" id="next-btn">
+    Next
+  </button>
 </div>
 
-<button type="button" id="next-btn">
-  Next
-</button>
-
 <script>
-$(document).ready(function() {
-  var wordGenerator = new window.WordGenerator();
-  wordGenerator.initialize(<%= @generator.to_json.html_safe %>);
-});
+  $(document).ready(function() {
+    var wordGenerator = new window.WordGenerator();
+    wordGenerator.initialize(<%= @generator.to_json.html_safe %>);
+  });
 </script>
