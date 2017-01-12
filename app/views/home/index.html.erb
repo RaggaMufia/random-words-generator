@@ -1,1 +1,14 @@
-Hello World
+<div class="hero-content">
+  WOAH
+</div>
+
+<button type="button" id="next-btn">
+  Next
+</button>
+
+<script>
+$(document).ready(function() {
+  var wordGenerator = new window.WordGenerator();
+  wordGenerator.initialize(<%= @generator.to_json.html_safe %>);
+});
+</script>
