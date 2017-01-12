@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @generator = RandomWord::WORDS
+    @generator = Word.all.map(&:name).shuffle
   end
 end
